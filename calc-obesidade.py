@@ -3,10 +3,10 @@ import skfuzzy as fuzz
 import matplotlib.pyplot as plt
 from skfuzzy import control as ctrl
 
-# Variáveis de entrada (quantidade de comida em kcal)
+
 comida = ctrl.Antecedent(np.arange(0, 11, 1), 'comida')
 
-# Variáveis de saída (peso ganho em kg)
+
 peso = ctrl.Consequent(np.arange(0, 11, 1), 'peso')
 
 # ----- TRIANGULAR -----
@@ -102,9 +102,42 @@ def plotar_funcoes(tipo):
     ax[1].legend()
 
     plt.show()
-
-# Chamando a função para cada tipo de pertinência
 for tipo in tipos:
     plotar_funcoes(tipo)
+
+def analise_sensibilidade():
+    valores_teste = np.arange(0, 11, 1)  
+    tipos = ['triangular', 'gaussiana', 'trapezoidal']
+    
+    resultados = {tipo: [] for tipo in tipos}
+
+    for tipo in tipos:
+        print(f"\n--- Testando {tipo.upper()} ---")
+        calculadora = criar_sistema_regras(tipo)
+        
+        for valor in valores_teste:
+            calculadora.input['comida'] = valor
+            calculadora.compute()
+
+            if 'peso' in calculadora.output:
+                resultados[tipo].append(calculadora.output['peso'])
+            else:
+                print(f"⚠️ Aviso: Sem saída para {valor} kcal no tipo {tipo}.")
+                resultados[tipo].append(0) 
+    # Plotando os resultados
+    plt.figure(figsize=(10, 5))
+    for tipo in tipos:
+        plt.plot(valores_teste, resultados[tipo], label=tipo)
+    
+    plt.xlabel("Comida (kcal)")
+    plt.ylabel("Peso (kg)")
+    plt.title("Análise de Sensibilidade das Funções de Pertinência")
+    plt.legend()
+    plt.grid()
+    
+    plt.show()  # Exibir o gráfico
+
+# Chamar a função corrigida
+analise_sensibilidade()
 
 
