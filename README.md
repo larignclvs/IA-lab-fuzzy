@@ -15,3 +15,6 @@ Um exemplo onde a lógica Fuzzy poderia ser utilizada seria em padrões de compo
 
 g) Análise com a adição da entrada Tempo de Atividade 
 ![image](https://github.com/user-attachments/assets/0a0b3244-e0b5-44f8-94ef-eba68d333d15)
+A Gaussiana tende a ser mais sensível a variações nas entradas. Ela gera previsões mais fluídas, ajustando-se de maneira mais contínua conforme as entradas mudam. 
+A Triangular e Trapezoidal oferecem previsões mais rígidas, com transições mais abruptas entre os valores de pertinência.
+
