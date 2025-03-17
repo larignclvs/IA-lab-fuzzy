@@ -12,3 +12,7 @@ e)
 
 f) A lógica fuzzy nos ajudou a compreender padrões e classificações que são difíceis de definir com precisão por nós, humanos. Isso ocorre porque muitos problemas envolvem informações imprecisas ou subjetivas, que são mais complicadas de serem traduzidas diretamente para uma máquina.
 Um exemplo onde a lógica Fuzzy poderia ser utilizada seria em padrões de comportamento, como x tipo de pessoa tende a escutar y tipo de música.
+
+# Análise com a adição da entrada Tempo de Atividade 
+![image](![image](https://github.com/user-attachments/assets/0a0b3244-e0b5-44f8-94ef-eba68d333d15)
+)
