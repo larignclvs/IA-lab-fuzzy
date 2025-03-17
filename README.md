@@ -6,15 +6,13 @@ b) ![image](https://github.com/user-attachments/assets/3d144603-df3d-42f2-a94b-4
 c)
 ![image](https://github.com/user-attachments/assets/cb452a7b-401a-4a88-9208-25209e3ab404)
 
-d)
+d)Análise com a adição da entrada Tempo de Atividade 
+![image](https://github.com/user-attachments/assets/0a0b3244-e0b5-44f8-94ef-eba68d333d15)
 
-e)  
+e)  A Gaussiana tende a ser mais sensível a variações nas entradas. Ela gera previsões mais fluídas, ajustando-se de maneira mais contínua conforme as entradas mudam. 
+A Triangular e Trapezoidal oferecem previsões mais rígidas, com transições mais abruptas entre os valores de pertinência.
 
 f) A lógica fuzzy nos ajudou a compreender padrões e classificações que são difíceis de definir com precisão por nós, humanos. Isso ocorre porque muitos problemas envolvem informações imprecisas ou subjetivas, que são mais complicadas de serem traduzidas diretamente para uma máquina.
 Um exemplo onde a lógica Fuzzy poderia ser utilizada seria em padrões de comportamento, como x tipo de pessoa tende a escutar y tipo de música.
 
-g) Análise com a adição da entrada Tempo de Atividade 
-![image](https://github.com/user-attachments/assets/0a0b3244-e0b5-44f8-94ef-eba68d333d15)
-A Gaussiana tende a ser mais sensível a variações nas entradas. Ela gera previsões mais fluídas, ajustando-se de maneira mais contínua conforme as entradas mudam. 
-A Triangular e Trapezoidal oferecem previsões mais rígidas, com transições mais abruptas entre os valores de pertinência.
 
